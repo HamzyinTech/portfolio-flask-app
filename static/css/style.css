@@ -998,3 +998,89 @@ section {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   FINAL MICRO SPACING FIX
+   (ONLY GAP CONTROL — NO STYLE CHANGES)
+========================= */
+
+/* GLOBAL SECTION SPACING */
+section {
+    padding: 32px 0; /* slightly tighter than 35px */
+}
+
+/* Prevent stacked spacing doubling */
+section + section {
+    margin-top: 0 !important;
+}
+
+/* MAIN CONTAINER */
+.page-container {
+    padding: 45px 20px; /* slightly reduced */
+}
+
+/* HERO (controls HOME → ABOUT gap) */
+.hero-container {
+    min-height: 82vh; /* tighter than before */
+    margin-bottom: 5px; /* 🔥 reduces home → about space */
+}
+
+/* NAVBAR */
+.navbar {
+    margin: 10px auto; /* tighter */
+}
+
+/* ABOUT SECTION (pulls it closer to hero) */
+.about-container {
+    padding: 25px 0; /* reduced */
+}
+
+/* PROJECT SHOWCASE */
+.project-showcase {
+    margin: 2.5rem 0; /* tighter */
+}
+
+/* TECH / SKILLS / EXPERIENCE / CONTACT */
+.tech-section,
+.skills-section,
+.experience-section,
+.contact-section {
+    padding: 45px 20px; /* reduced */
+}
+
+/* 🔥 CRITICAL FIX: EXPERIENCE ↔ TOOLS GAP */
+.tech-section {
+    padding-bottom: 30px; /* pulls next section upward */
+}
+
+.experience-section {
+    padding-top: 30px; /* reduces gap above experience */
+}
+
+/* CONTACT SECTION FINAL TIGHTEN */
+.contact-section {
+    padding-top: 35px; /* pulls contact closer */
+}
