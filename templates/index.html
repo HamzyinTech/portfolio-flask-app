@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#tools">Tools</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<!-- ================= HOME ================= -->
+<section id="home">
+    <div class="hero-container">
+
+        <div class="hero-text">
+            <h1 class="name">
+                Hello I'm 
+                <span class="highlight">Oyegoke Hamad Titiloye</span>
+            </h1>
+
+            <div class="divider"></div>
+
+            <h2 class="role">Data Scientist | Data Analyst</h2>
+
+            <p class="bio">
+                Passionate about building interactive dashboards, training machine learning models,
+                and transforming raw data into meaningful business insights that drive decisions.
+            </p>
+        </div>
+
+        <div class="hero-image">
+            <div class="profile-wrapper">
+                <img src="{{ url_for('static', filename='images/profile001.png') }}">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+    {% include "about.html" %}
+</section>
+
+
+<section id="experience">
+    {% include "experience.html" %}
+</section>
+
+<!-- ================= TOOLS ================= -->
+<section id="tools">
+    {% include "tools.html" %}
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+    {% include "skills.html" %}
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+    {% include "projects.html" %}
+</section>
+
+<section id="contact">
+    {% include "contact.html" %}
+</section>
+
+<!-- ✅ SLIDER SCRIPT (THIS WAS MISSING) -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    document.querySelectorAll('.project-card').forEach(card => {
+
+        const slides = card.querySelectorAll('.slide');
+        let index = 0;
+
+        const nextBtn = card.querySelector('.next');
+        const prevBtn = card.querySelector('.prev');
+
+        if (!nextBtn || !prevBtn || slides.length <= 1) return;
+
+        function showSlide(i) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[i].classList.add('active');
+        }
+
+        nextBtn.addEventListener('click', () => {
+            index = (index + 1) % slides.length;
+            showSlide(index);
+        });
+
+        prevBtn.addEventListener('click', () => {
+            index = (index - 1 + slides.length) % slides.length;
+            showSlide(index);
+        });
+
+        // Auto-slide
+        setInterval(() => {
+            index = (index + 1) % slides.length;
+            showSlide(index);
+        }, 4000);
+
+    });
+
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "title": "Loan Approval Prediction",
+    "description": "Developed a machine learning model to predict loan approval outcomes using applicant data.",
+    "live_demo" :"https://loanpredapp-r6g666b47oggqiwegyxjo6.streamlit.app/",
+     "details": [
+"Developed a machine learning-based loan approval prediction system to automate credit risk assessment",
+"Performed data cleaning, preprocessing, and feature engineering to prepare applicant financial data for modeling",
+"Conducted exploratory data analysis (EDA) to identify key factors influencing loan approval decisions",
+"Implemented classification algorithms including Logistic Regression and Decision Tree to predict loan eligibility",
+"Evaluated model performance using accuracy metrics to ensure reliable and consistent predictions",
+"Built and deployed an interactive Streamlit application to provide a user-friendly interface for non-technical users to test loan predictions without requiring coding or backend access",
+"Designed a scalable workflow demonstrating the practical application of predictive analytics in financial decision-making"
+    ],
+    "tech": "Python, Scikit-learn",
+    "images": [
+      "/static/images/project_p.png",
+      "/static/images/project_p2.png"
+    ],
+    "github": "https://github.com/HamzyinTech/loan-approval-prediction"
+  },
+  {
+    "id": 2,
+    "title": "Sales Performance Analytics Dashboard",
+    "description": "Built an interactive Excel dashboard that transforms raw sales data into actionable insights.",
+    
+    "details": [
+      "Developed an interactive dashboard to analyze and visualize sales data across multiple dimensions (time, region, product)",
+      "Utilized Pivot Tables, slicers, and dynamic charts to enable real-time filtering and exploration of KPIs",
+      "Performed data cleaning and transformation to ensure accuracy and consistency of insights",
+      "Identified key revenue drivers, top-performing products, and underperforming regions",
+      "Designed a user-friendly interface to support data-driven decision-making for business stakeholders"
+    ],
+
+    "tech": "Microsoft Excel, Data Analysis",
+    "images": [
+      "/static/images/project2.png",
+      "/static/images/project1a.png",
+      "/static/images/project1.png"
+    ],
+    "github": "https://github.com/HamzyinTech/sales-performance-analytics-dashboard-excel"
+  },
+
+   {
+    "id": 3,
+    "title": "Human Resources Analytics",
+    "description": "Built an interactive Excel dashboard that transforms raw sales data into actionable insights.",
+    
+    "details": [
+"Developed an interactive HR analytics dashboard in Microsoft Excel to analyze employee data across multiple dimensions",
+"Utilized Pivot Tables, slicers, and dynamic charts to enable real-time filtering and exploration of key HR metrics",
+"Performed data cleaning and transformation to ensure accuracy and consistency of employee records",
+"Conducted exploratory data analysis to identify trends in employee attrition, demographics, and departmental distribution",
+"Visualized key insights such as workforce composition, salary structure, and performance indicators",
+"Identified patterns influencing employee retention and provided data-driven insights to support HR decision-making",
+"Designed a user-friendly and professional dashboard interface for effective stakeholder interaction and reporting"
+    ],
+
+    "tech": "Microsoft Excel, Data Analysis",
+    "images": [
+      "/static/images/HR_dash_.png",
+      "/static/images/HR_DASH.png",
+      "/static/images/project1.png"
+    ],
+    "github": "https://github.com/HamzyinTech/Human_Resources_Analytic_Project"
+  }
+
+
+  
+
+  
+]

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="about-container">
+
+    <!-- LEFT IMAGE -->
+    <div class="about-image">
+        <img src="{{ url_for('static', filename='images/profile.png') }}" alt="Profile">
+    </div>
+
+    <!-- RIGHT TEXT -->
+    <div class="about-text">
+
+        <h1>About Me</h1>
+
+        <p>
+            I am a Data Scientist and Data Analyst with strong interest in turning raw datasets into meaningful insights.
+            My work focuses on data cleaning, exploratory data analysis, dashboard development, and machine learning model building.
+        </p>
+
+        <p>
+            I enjoy working with tools like Python, Pandas, NumPy, SQL, and visualization libraries such as Matplotlib and Power BI.
+            I also build interactive dashboards and deploy real-world data-driven applications.
+        </p>
+
+        <p>
+            My goal is to use data to solve real business problems, improve decision-making, and build scalable analytical systems.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

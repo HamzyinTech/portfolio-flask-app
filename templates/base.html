@@ -1,0 +1,55 @@
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="/">Home</a>
+        <a href="/skills">Skills</a>
+        <a href="/projects">Projects</a>
+        <a href="/about">About</a>
+    </nav>
+
+    <!-- PAGE CONTENT -->
+    {% block content %}{% endblock %}
+
+    <!-- ✅ FINAL WORKING SLIDER SCRIPT -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        document.querySelectorAll('.project-card').forEach(card => {
+
+            const slides = card.querySelectorAll('.slide');
+            let index = 0;
+
+            const nextBtn = card.querySelector('.next');
+            const prevBtn = card.querySelector('.prev');
+
+            // Skip if only one image or buttons missing
+            if (!nextBtn || !prevBtn || slides.length <= 1) return;
+
+            function showSlide(i) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                slides[i].classList.add('active');
+            }
+
+            nextBtn.addEventListener('click', () => {
+                index = (index + 1) % slides.length;
+                showSlide(index);
+            });
+
+            prevBtn.addEventListener('click', () => {
+                index = (index - 1 + slides.length) % slides.length;
+                showSlide(index);
+            });
+
+            // Auto slide every 4 seconds
+            setInterval(() => {
+                index = (index + 1) % slides.length;
+                showSlide(index);
+            }, 4000);
+
+        });
+
+    });
+    </script>
+
+</body>

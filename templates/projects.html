@@ -1,0 +1,66 @@
+{% block content %}
+
+<div class="page-container">
+
+    <h1 class="projects-title">Projects📽️📉 </h1>
+
+    {% for project in projects %}
+
+    <div class="project-showcase">
+
+        <!-- LEFT SIDE -->
+        <div class="project-info">
+            <h2 class="project-title">{{ project.title }}</h2>
+
+            <p class="project-description">
+                {{ project.description }}
+            </p>
+
+            <!-- 🔥 DETAILS -->
+            {% if project.details %}
+            <ul class="project-details">
+                {% for point in project.details %}
+                    <li>{{ point }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+
+            <div class="tech-stack">
+                {{ project.tech }}
+            </div>
+
+            <!-- ✅ FIXED BUTTONS SECTION -->
+            <div class="project-buttons">
+
+                {% if project.github %}
+                <a href="{{ project.github }}" target="_blank" class="btn github-btn">
+                    View Repository  →
+                </a>
+                {% endif %}
+
+                {% if project.live_demo %}
+                <a href="{{ project.live_demo }}" target="_blank" class="btn live-btn">
+                    Live Demo →
+                </a>
+                {% endif %}
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE IMAGE -->
+        <div class="project-visual">
+            <img src="{{ project.images[0] }}" class="img-main">
+
+            {% if project.images|length > 1 %}
+                <img src="{{ project.images[1] }}" class="img-overlay">
+            {% endif %}
+        </div>
+
+    </div>
+
+    {% endfor %}
+
+</div>
+
+{% endblock %}

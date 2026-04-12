@@ -1,0 +1,25 @@
+
+
+{% block content %}
+
+<section class="skills-section">
+
+    <h2>Technical Skills</h2>
+
+    <p class="skills-intro">
+        I operate across the full data lifecycle — from data extraction and storage to analysis, modeling and insight delivery.
+    </p>
+
+    <ul class="skills-list">
+
+        {% for skill in skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+
+    </ul>
+     <p class="skills-outro">
+       This combination of technical expertise enables end-to-end data solutions.
+     </p>
+</section>
+
+{% endblock %}

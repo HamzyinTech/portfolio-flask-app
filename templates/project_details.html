@@ -1,0 +1,21 @@
+
+
+{% block content %}
+
+<div class="page-container">
+
+    <div class="project-detail glass">
+
+        <h1>{{ project.title }}</h1>
+
+        <img src="{{ project.image }}" alt="">
+
+        <p>{{ project.description }}</p>
+
+        <p><strong>Tech Stack:</strong> {{ project.tech }}</p>
+
+    </div>
+
+</div>
+
+{% endblock %}
