@@ -20,8 +20,35 @@
     ],
     "github": "https://github.com/HamzyinTech/loan-approval-prediction"
   },
+
+
   {
     "id": 2,
+    "title": "Customer Churn Analysis & RFM Segmentation",
+    "description": "End-to-end customer churn analysis and RFM segmentation project using SQL Server and Power BI, featuring data cleaning, feature engineering, churn definition, and an interactive dashboard for business insights.",
+   
+     "details": [
+"Developed an end-to-end customer churn analysis and RFM segmentation solution using SQL Server and Power BI", 
+"Transformed raw transactional data into a clean, analysis ready dataset through a multi stage SQL data pipeline, including data cleaning, validation, and feature engineering",
+
+"Defined a business-driven churn metric based on customer inactivity and applied RFM (Recency, Frequency, Monetary) analysis to segment customers into actionable groups such as Champions, Loyal Customers, and At Risk",
+
+"Designed an interactive Power BI dashboard to visualize customer behavior, revenue contribution, and churn patterns, enabling data driven decision making and targeted business strategies."],
+    "tech": "SQL, Microsoft Power BI",
+    "images": [
+      "/static/images/customer.png",
+       "/static/images/focus.png"
+
+      
+    ],
+    "github": "https://github.com/HamzyinTech/Customer-Churn-RFM-Analysis"
+  },
+
+
+  
+
+  {
+    "id": 3,
     "title": "Sales Performance Analytics Dashboard",
     "description": "Built an interactive Excel dashboard that transforms raw sales data into actionable insights.",
     
@@ -43,7 +70,7 @@
   },
 
    {
-    "id": 3,
+    "id": 4,
     "title": "Human Resources Analytics",
     "description": "Built an interactive Excel dashboard that transforms raw sales data into actionable insights.",
     
